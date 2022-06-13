@@ -1,0 +1,49 @@
+.container-faq-global {
+  width: 90%;
+  margin: 100px auto;
+}
+
+.container-faq {
+  box-shadow: 0 0 15px -1px rgba(0,0,0,.1);
+  padding: 30px;
+}
+
+.container-faq .title-faq {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.a-answer{
+  color: rgb(207, 190, 190);
+}
+
+.a-answer:hover{
+  color: rgb(123, 123, 165);
+  transition: color 0.4s ease;
+}
+
+.question{
+  margin: 25px 0 25px 0;
+}
+
+
+.main-pr section ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-pr section ul li {
+  margin: 5px;
+}
+
+@media screen and (max-width: 500px){
+  .container-faq-global{
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .title-faq-title{
+    font-size: 2.5rem;
+  }
+}

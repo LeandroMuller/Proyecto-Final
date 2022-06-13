@@ -1,0 +1,44 @@
+.footer {
+  height: auto;
+  margin: 50px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.redes {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.redes li {
+  margin: 0 10px;
+}
+
+.redes a {
+  text-decoration: none;
+  color: white;
+}
+
+.redes a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+
+.redes a:hover i {
+  color: aqua;
+}
+
+@media screen and (max-width: 500px) {
+  .h3footer{
+    font-size: 1.50rem;
+  }
+}

@@ -1,0 +1,36 @@
+/*----PORTADA----*/
+
+.portada {
+  background: url("/IMG/portada.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 87vh;
+  text-align: center;
+  padding: 300px 20px;
+}
+
+@media screen and (max-width:500px) {
+  .portada{
+    background: url("/IMG/portada2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 27vh;
+    text-align: center;
+  }
+
+  .animate__animated.animate__zoomIn{
+    font-size: 3rem;
+  }
+
+  .display-2{
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .animate__animated.animate__zoomIn{
+    font-size: 4rem;
+  }
+}

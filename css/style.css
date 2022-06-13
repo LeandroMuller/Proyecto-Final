@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.7rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.animate__animated.animate__zoomIn {
+  font-size: 5rem;
+}
+
+.display-2 {
+  font-size: 2rem;
+}
+
+/*----PORTADA----*/
+.portada {
+  background: url("/IMG/portada.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 87vh;
+  text-align: center;
+  padding: 300px 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .portada {
+    background: url("/IMG/portada2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 27vh;
+    text-align: center;
+  }
+  .animate__animated.animate__zoomIn {
+    font-size: 3rem;
+  }
+  .display-2 {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .animate__animated.animate__zoomIn {
+    font-size: 4rem;
+  }
+}
+.destacado {
+  padding: 40px;
+  text-align: center;
+}
+
+.slider {
+  width: 60%;
+  /*para centrar el carrusel*/
+  margin: auto;
+  /*oculta el resto de las imagenes*/
+  overflow: hidden;
+}
+
+.carrusel li {
+  list-style: none;
+  width: 100%;
+}
+
+.img-carrusel {
+  /*seria el 100% del <li>*/
+  width: 100%;
+}
+
+.carrusel {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: carrusel 25s linear infinite alternate;
+}
+
+@keyframes carrusel {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .destacado {
+    font-size: 1.65rem;
+  }
+}
+.footer {
+  height: auto;
+  margin: 50px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.redes {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.redes li {
+  margin: 0 10px;
+}
+
+.redes a {
+  text-decoration: none;
+  color: white;
+}
+
+.redes a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+
+.redes a:hover i {
+  color: aqua;
+}
+
+@media screen and (max-width: 500px) {
+  .h3footer {
+    font-size: 1.5rem;
+  }
+}
+main section ul {
+  display: flex;
+  list-style: none;
+}
+
+main section ul li {
+  margin: 5px;
+}
+
+.destacado {
+  text-align: center;
+}
+
+.main-s section ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-s section ul li {
+  margin: 5px;
+}
+
+.sucursal {
+  text-align: center;
+}
+
+.maps {
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .sucursal {
+    margin: 20px;
+  }
+  .maps {
+    width: 80%;
+    margin-top: 30px;
+  }
+}
+.container-faq-global {
+  width: 90%;
+  margin: 100px auto;
+}
+
+.container-faq {
+  box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.container-faq .title-faq {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.a-answer {
+  color: rgb(207, 190, 190);
+}
+
+.a-answer:hover {
+  color: rgb(123, 123, 165);
+  transition: color 0.4s ease;
+}
+
+.question {
+  margin: 25px 0 25px 0;
+}
+
+.main-pr section ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-pr section ul li {
+  margin: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .container-faq-global {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .title-faq-title {
+    font-size: 2.5rem;
+  }
+}
+.main-c section ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-c section ul li {
+  margin: 5px;
+}
+
+.cost span {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.shoe {
+  background-color: rgb(82, 59, 59);
+}
+
+h5 {
+  margin: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
